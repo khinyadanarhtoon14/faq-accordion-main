@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color:hsl(275, 100%, 97%) ;
+    font-family: "Work Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 500px;
+    gap:1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.heading{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.container .heading h1{
+    font-weight: 700;
+}   
+.container p{
+    color:hsl(292, 16%, 49%);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+hr{
+    border:1px solid hsl(275, 100%, 97%);
+}
+.plus,.minus{
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.attribution{
+    font-size: 14px;
+}
+@media  screen and (max-width:585px) {
+    .container{
+       max-width: 400px;
+    }
+}
+@media  screen and (max-width:400px) {
+    body{
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+    }
+    .container{
+       max-width: 350px;
+    }
+}
+
+
+
